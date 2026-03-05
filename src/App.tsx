@@ -1,3 +1,4 @@
+import Hero from "./layout/Hero";
 import Navbar from "./layout/Navbar";
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
 
       <div className="relative flex flex-col min-h-screen ">
         <Navbar />
+        <Hero />
       </div>
     </section>
   );
