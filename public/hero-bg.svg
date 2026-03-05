@@ -20,7 +20,7 @@
   </linearGradient>
   <linearGradient id="fadeBot" x1="0" y1="0" x2="0" y2="1" gradientUnits="objectBoundingBox">
     <stop offset="0%"   stop-color="#060910" stop-opacity="0"/>
-    <stop offset="100%" stop-color="#060910" stop-opacity="1"/>
+    <stop offset="100%" stop-color="#0D1525" stop-opacity="1"/>
   </linearGradient>
 
 
@@ -216,7 +216,7 @@
   <polygon points="1440.0,648.0 1440.0,795.1 1330.0,771.5" fill="rgb(21,12,48)" stroke="rgba(0,212,255,0.04)" stroke-width="0.5"/>
 </g>
 <rect width="1440" height="162" fill="url(#fadeTop)"/>
-<rect y="720" width="1440" height="180" fill="url(#fadeBot)"/>
+<rect y="450" width="1440" height="450" fill="url(#fadeBot)"/>
 <circle cx="581.7" cy="135.1" r="1.0" fill="#00D4FF" opacity="0.55" class="dot" style="animation-delay:1.0s;animation-duration:4.0s"/>
 <circle cx="361.7" cy="258.6" r="1.4" fill="#7B61FF" opacity="0.55" class="dot" style="animation-delay:2.2s;animation-duration:4.4s"/>
 <circle cx="704.6" cy="284.6" r="1.4" fill="#00D4FF" opacity="0.55" class="dot" style="animation-delay:0.9s;animation-duration:4.3s"/>

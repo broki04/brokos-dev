@@ -32,7 +32,7 @@ export default function Navbar() {
     <nav
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${scrolled ? "bg-brand-darker/90 backdrop-blur-md border-b border-brand-surface" : "bg-transparent"}`}
     >
-      <div className="max-w-6xl mx-auto flex items-center justify-between p-6">
+      <div className="max-w-6xl mx-auto flex items-center justify-between px-8 py-4 font-sans">
         <h1>
           <a href="#" className="text-2xl font-bold tracking-tight">
             <span className="bg-linear-to-r from-brand-cyan to-brand-purple bg-clip-text text-transparent">
@@ -55,7 +55,7 @@ export default function Navbar() {
           ))}
         </ul>
 
-        <ul className="flex space-x-4 items-center">
+        <ul className="flex items-center space-x-4">
           {SOCIAL_LINKS.map(({ icon: Icon, href, label }) => (
             <li key={label}>
               <a
@@ -63,7 +63,7 @@ export default function Navbar() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={label}
-                className="text-brand-text hover:text-brand-cyan hover:scale-110 transition-all duration-300 inline-block"
+                className="flex items-center text-brand-text hover:text-brand-cyan hover:scale-110 transition-all duration-300"
               >
                 <Icon size={18} />
               </a>
