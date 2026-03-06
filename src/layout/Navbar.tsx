@@ -1,6 +1,6 @@
 import { GithubIcon, InstagramIcon, TwitterIcon } from "lucide-react";
 import "../css/navbar.css";
-import { useEffect, useState } from "react";
+import { useNavbar } from "../hooks/useNavbar";
 
 const NAV_LINKS = [
   { label: "Strona główna", href: "#" },
@@ -20,17 +20,18 @@ const SOCIAL_LINKS = [
 ];
 
 export default function Navbar() {
-  const [scrolled, setScrolled] = useState(false);
-
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 50);
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
+  const { visible, scrolled } = useNavbar();
 
   return (
     <nav
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${scrolled ? "bg-brand-darker/90 backdrop-blur-md border-b border-brand-surface" : "bg-transparent"}`}
+      className={[
+        "navbar",
+        "fixed top-0 left-0 w-full z-50 transition-all duration-300",
+        !visible ? "navbar--hidden" : "",
+        scrolled
+          ? "navbar--scrolled bg-brand-dark/90 backdrop-blur-md"
+          : "bg-transparent",
+      ].join(" ")}
     >
       <div className="max-w-6xl mx-auto flex items-center justify-between px-8 py-4 font-sans">
         <h1>

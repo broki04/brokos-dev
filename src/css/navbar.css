@@ -1,3 +1,49 @@
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.navbar {
+  animation: slideDown 0.5s ease forwards;
+  transition:
+    transform 0.3s ease,
+    background-color 0.3s ease,
+    backdrop-filter 0.3s ease,
+    border-color 0.3s ease,
+    opacity 0.3s ease;
+}
+
+.navbar--hidden {
+  transform: translateY(-100%);
+  opacity: 0;
+}
+
+@keyframes borderSlide {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.navbar--scrolled::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  background-color: #1e293b;
+  animation: borderSlide 0.4s ease forwards;
+}
+
+/* underlink hover */
 .nav-link {
   position: relative;
   color: #e2e8f0;
