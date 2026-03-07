@@ -4,7 +4,7 @@ import { useNavbar } from "../hooks/useNavbar";
 
 const NAV_LINKS = [
   { label: "Strona główna", href: "#" },
-  { label: "Informacje", href: "#about" },
+  { label: "Usługi", href: "#services" },
   { label: "Portfolio", href: "#projects" },
   { label: "Kontakt", href: "#contact" },
 ];

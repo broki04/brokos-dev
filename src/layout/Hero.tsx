@@ -1,3 +1,5 @@
+import "../css/hero.css";
+
 export default function Hero() {
   return (
     <>
@@ -55,9 +57,10 @@ export default function Hero() {
             </div>
 
             <div className="hidden lg:flex justify-center items-center">
-              <div className="relative">
+              <div className="photo-wrapper relative flex items-center justify-center">
                 <div className="absolute inset-0 rounded-full bg-linear-to-br from-brand-cyan/20 to-brand-purple/20 blur-3xl scale-110" />
-                <div className="relative w-72 h-72 xl:w-80 xl:h-80 rounded-full border border-brand-darker overflow-hidden">
+
+                <div className="relative w-72 h-72 xl:w-80 xl:h-80 rounded-full border border-brand-darker overflow-hidden z-10">
                   <div className="w-full h-full bg-linear-to-br from-brand-dark to-brand-darker flex items-center justify-center">
                     <img
                       src="/me.jpg"
@@ -66,8 +69,9 @@ export default function Hero() {
                     />
                   </div>
                 </div>
-                <div className="absolute -inset-3 rounded-full border border-brand-cyan/15" />
-                <div className="absolute -inset-6 rounded-full border border-brand-purple/10" />
+
+                <div className="spinning-ring-inner absolute -inset-3 rounded-full" />
+                <div className="spinning-ring-outer absolute -inset-6 rounded-full" />
               </div>
             </div>
           </div>
