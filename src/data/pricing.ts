@@ -1,0 +1,66 @@
+export const PRICING = [
+  {
+    name: "Landing Page",
+    price: "od 500 zł",
+    desc: "Jedna strona, idealna na kampanię lub produkt",
+    features: [
+      "1 podstrona",
+      "Responsywność",
+      "Formularz kontaktowy",
+      "Podstawowe SEO",
+    ],
+    accent: false,
+  },
+  {
+    name: "Strona wizytówka",
+    price: "od 1 200 zł",
+    desc: "Prosta strona prezentująca firmę lub osobę",
+    features: [
+      "Do 5 podstron",
+      "Responsywność",
+      "Formularz kontaktowy",
+      "Podstawowe SEO",
+      "CMS (opcja)",
+    ],
+    accent: true,
+  },
+  {
+    name: "Strona firmowa",
+    price: "od 2 500 zł",
+    desc: "Rozbudowana strona dla firm i marek",
+    features: [
+      "Do 15 podstron",
+      "CMS / panel admina",
+      "Blog",
+      "SEO zaawansowane",
+      "Integracje (GA, FB Pixel)",
+    ],
+    accent: false,
+  },
+  {
+    name: "Sklep internetowy",
+    price: "od 4 000 zł",
+    desc: "Pełny sklep e-commerce z płatnościami",
+    features: [
+      "Nieograniczone produkty",
+      "Płatności online",
+      "Panel zamówień",
+      "SEO e-commerce",
+      "Integracja kurierów",
+    ],
+    accent: true,
+  },
+  {
+    name: "Aplikacja webowa",
+    price: "Na zapytanie",
+    desc: "Dedykowane rozwiązanie na miarę potrzeb",
+    features: [
+      "Architektura na miarę",
+      "Autoryzacja / role",
+      "API",
+      "Testy",
+      "Wsparcie po wdrożeniu",
+    ],
+    accent: false,
+  },
+];
