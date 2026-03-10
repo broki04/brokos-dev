@@ -1,10 +1,13 @@
 import styles from "./Hero.module.css";
 
+import hero__bg from "../../assets/hero-bg.svg";
+import me__avatar from "../../assets/me.jpg";
+
 export default function Hero() {
   return (
     <section className="relative h-screen">
       <img
-        src="/hero-bg.svg"
+        src={hero__bg}
         className="absolute inset-0 w-full h-full object-cover"
         aria-hidden="true"
       />
@@ -64,7 +67,7 @@ export default function Hero() {
               <div className="relative w-72 h-72 xl:w-80 xl:h-80 rounded-full border border-brand-darker overflow-hidden z-10">
                 <div className="w-full h-full bg-linear-to-br from-brand-dark to-brand-darker flex items-center justify-center">
                   <img
-                    src="/me.jpg"
+                    src={me__avatar}
                     alt="photo"
                     className="w-full h-full object-cover"
                   />
