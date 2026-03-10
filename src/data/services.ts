@@ -9,6 +9,8 @@ export const SERVICES = [
       "Zgodność z SEO",
       "Panel administracyjny",
     ],
+    image:
+      "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=800&q=80",
     tag: "Web Design",
   },
   {
@@ -21,6 +23,8 @@ export const SERVICES = [
       "Koszyk i zamówienia",
       "Bezpieczeństwo transakcji",
     ],
+    image:
+      "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&q=80",
     tag: "E-commerce",
   },
   {
@@ -33,6 +37,8 @@ export const SERVICES = [
       "Autoryzacja i role",
       "Testy i Ci/CD",
     ],
+    image:
+      "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=800&q=80",
     tag: "Web App",
   },
   {
@@ -45,6 +51,8 @@ export const SERVICES = [
       "Optymalizacja obrazów",
       "Structured data",
     ],
+    image:
+      "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=800&q=80",
     tag: "SEO",
   },
   {
@@ -57,6 +65,8 @@ export const SERVICES = [
       "Doradztwo zakupowe",
       "Aktualizacje co miesiąc",
     ],
+    image:
+      "https://images.unsplash.com/photo-1587202372634-32705e3bf49c?w=800&q=80",
     tag: "IT",
   },
 ];

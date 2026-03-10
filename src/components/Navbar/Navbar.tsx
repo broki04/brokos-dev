@@ -1,4 +1,4 @@
-import "./Navbar.module.css";
+import styles from "./Navbar.module.css";
 
 import { useNavbar } from "../../hooks/useNavbar";
 import { useState } from "react";
@@ -14,11 +14,11 @@ export default function Navbar() {
     <>
       <nav
         className={[
-          "navbar",
+          styles.navbar,
           "fixed top-0 left-0 w-full z-50 transition-all duration-300",
-          !visible ? "navbar--hidden" : "",
+          !visible ? styles.navbar__hidden : "",
           scrolled
-            ? "navbar--scrolled bg-brand-dark/90 backdrop-blur-md"
+            ? `${styles.navbar__scrolled} bg-brand-dark/90 backdrop-blur-md`
             : "bg-transparent",
         ].join(" ")}
       >
@@ -37,7 +37,7 @@ export default function Navbar() {
               <li key={href}>
                 <a
                   href={href}
-                  className="nav-link text-brand-muted hover:text-brand-text transition-colors duration-300"
+                  className={`${styles.nav__link} text-brand-muted hover:text-brand-text transition-colors duration-300`}
                 >
                   {label}
                 </a>

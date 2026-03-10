@@ -1,9 +1,8 @@
 import { SERVICES } from "../data/services";
-import Pricing from "./Pricing";
 
 export default function Services() {
   return (
-    <section id="services" className="bg-brand-darker py-32 px-6">
+    <section id="services" className="py-24 pb-4">
       <div className="max-w-6xl mx-auto">
         <div className="mb-20">
           <p className="text-brand-cyan text-sm font-mono tracking-[4px] uppercase mb-4">
@@ -51,26 +50,19 @@ export default function Services() {
               </div>
 
               <div className={i % 2 !== 0 ? "lg:[direction-ltr]" : ""}>
-                <div className="relative rounded-2xl overflow-hidden border border-brand-surface aspect-video bg-linear-to-br from-brand-dark to-brand-surface flex items-center justify-center">
-                  <div className="absolute top-4 left-4 right-4 h-6 rounded bg-brand-surface flex items-center gap-2 px-3">
-                    <div className="w-2 h-2 rounded-full bg-brand-subtle" />
-                    <div className="w-2 h-2 rounded-full bg-brand-subtle" />
-                    <div className="w-2 h-2 rounded-full bg-brand-subtle" />
-                    <div className="flex-1 h-2 rounded bg-brand-subtle ml-2" />
-                  </div>
+                <div className="relative isolate rounded-2xl overflow-hidden border border-brand-surface aspect-video group">
+                  <img
+                    src={service.image}
+                    alt={service.title}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
 
-                  <span className="text-brand-subtle text-sm font-mono tracking-widest">
-                    {service.tag} / preview
-                  </span>
-
-                  <div className="absolute inset-0 bg-linear-to-br from-brand-cyan/5 to-brand-purple/5" />
+                  <div className="absolute inset-0 bg-linear-to-br from-brand-cyan/10 to-brand-purple/10" />
                 </div>
               </div>
             </div>
           ))}
         </div>
-
-        <Pricing />
       </div>
     </section>
   );

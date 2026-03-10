@@ -5,6 +5,7 @@ export function useNavbar() {
   const [scrolled, setScrolled] = useState(false);
   const [lastY, setLastY] = useState(0);
 
+  // scroll logic
   useEffect(() => {
     const onScroll = () => {
       const currentY = window.scrollY;

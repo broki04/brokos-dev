@@ -1,6 +1,9 @@
 import Hero from "./components/Hero/Hero";
 import Navbar from "./components/Navbar/Navbar";
+import Pricing from "./components/Pricing";
 import Services from "./components/Services";
+import Skills from "./components/Skills";
+import Contact from "./components/Contact";
 
 function App() {
   return (
@@ -10,8 +13,11 @@ function App() {
 
         <Hero />
 
-        <main className="bg-brand-darker min-h-screen text-brand-text flex justify-center">
+        <main className="bg-brand-darker min-h-screen text-brand-text flex flex-col gap-1">
           <Services />
+          <Pricing />
+          <Skills />
+          <Contact />
         </main>
       </div>
     </section>
