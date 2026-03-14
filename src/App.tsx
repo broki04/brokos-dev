@@ -1,30 +1,18 @@
-import Hero from "./components/Hero/Hero";
-import Navbar from "./components/Navbar/Navbar";
-import Pricing from "./components/Pricing";
-import Services from "./components/Services";
-import Skills from "./components/Skills";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
+import { Routes, Route } from "react-router-dom";
+
+import Home from "./pages/Home";
+import Portfolio from "./pages/Portfolio";
+import MainLayout from "./pages/MainLayout";
 
 function App() {
   return (
     <section className="relative min-h-screen overflow-hidden bg-brand-darker">
-      <div className="relative flex flex-col min-h-screen">
-        <Navbar />
-
-        <Hero />
-
-        <main className="bg-brand-darker min-h-screen text-brand-text flex flex-col gap-1">
-          <Services />
-          <Pricing />
-          <Skills />
-          <Contact />
-        </main>
-
-        <footer>
-          <Footer />
-        </footer>
-      </div>
+      <Routes>
+        <Route element={<MainLayout />}>
+          <Route path="/" element={<Home />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+        </Route>
+      </Routes>
     </section>
   );
 }

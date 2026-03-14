@@ -1,7 +1,9 @@
 import styles from "./Hero.module.css";
 
-import hero__bg from "../../assets/hero-bg.svg";
-import me__avatar from "../../assets/me.jpg";
+import { Link } from "react-router-dom";
+
+import hero__bg from "@/assets/hero-bg.svg";
+import me__avatar from "@/assets/me.jpg";
 
 export default function Hero() {
   return (
@@ -42,12 +44,12 @@ export default function Hero() {
             </p>
 
             <div className="flex items-center gap-4 pt-2">
-              <a
-                href="#portfolio"
+              <Link
+                to="/portfolio"
                 className="px-6 py-3 rounded-lg bg-linear-to-r from-brand-cyan to-brand-purple text-[#060910] font-semibold text-sm tracking-wide hover:opacity-90 transition-opacity duration-300"
               >
                 Zobacz portfolio
-              </a>
+              </Link>
 
               <a
                 href="#contact"

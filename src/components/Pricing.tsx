@@ -3,7 +3,7 @@ import { PRICING, ADDONS } from "../data/pricing";
 
 export default function Pricing() {
   return (
-    <section id="prices" className="pb-24">
+    <section id="prices" className="pb-24 px-8">
       <div className="max-w-6xl mx-auto">
         <div className="mb-12">
           <p className="text-brand-cyan text-sm font-mono tracking-[4px] uppercase mb-4">
