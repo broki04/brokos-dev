@@ -33,6 +33,14 @@ Projekt prezentuje moje umiejętności oraz przykładowe realizacje.
 
 ---
 
+## 🔮 Plany rozwoju
+
+- dodanie trybu dark/light
+- integracja z back-endem
+- animacje (biblioteka Framer Motion)
+
+---
+
 ## ⚙️ Instalacja i uruchomienie
 
 ```bash
